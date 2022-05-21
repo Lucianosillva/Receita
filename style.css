@@ -1,11 +1,49 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 /* Configuração global a fim de deixar o site mais organizado */
 * {
     padding: 0;
     margin: 0;
 }
+/* Paleta de cores e fontes usando variáveis em CSS */
+:root {
+    --cor0: #F56A3D;
+    --cor1: #FF5240;
+    --cor3: #E94662;
+    --cor4: #FF40BF;
+    --cor5: #E43DF5;
+    --corfontepadrao: #4C4C4C;
+    --fonte-destaque: 'Dancing Script', cursive;
+    --fonte-padrao: Arial, Verdana, Helvetica, Sans-Serif;
+}
 #separacao {
-    background-color: orange;
+    background-color: #e94662;
     height: 100px;
     width: auto;
+}
+body {
+    font-family: var(--fonte-padrao);
+}
+ul, ol {
+    font-size: 1em;
+    font-weight: normal;
+    color: var(--corfontepadrao);
+}
+h2 {
+    font-size: 1.8em;
+    font-weight: normal;
+    color: var(--corfontepadrao);
+}
+header {
+    background-color: var(--cor3);
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+}
+footer {
+    background-color: var(--cor1);
+    text-align: center;
+    color: white;
 }
