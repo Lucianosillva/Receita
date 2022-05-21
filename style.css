@@ -7,8 +7,8 @@
 }
 /* Paleta de cores e fontes usando variáveis em CSS */
 :root {
-    --cor0: #F56A3D;
-    --cor1: #FF5240;
+    --cor1: #F56A3D;
+    --cor2: #FF5240;
     --cor3: #E94662;
     --cor4: #FF40BF;
     --cor5: #E43DF5;
@@ -28,11 +28,19 @@ ul, ol {
     font-size: 1em;
     font-weight: normal;
     color: var(--corfontepadrao);
+    line-height: 2em;
+    margin: 0px 0px 0px 110px;
 }
 h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: normal;
     color: var(--corfontepadrao);
+    margin: 20px 20px 20px 110px;
+}
+.receita {
+    font-size: 2.2em;
+    color: #2f2e2e;
+    margin: 20px 20px 30px 20px;
 }
 header {
     background-color: var(--cor3);
@@ -42,8 +50,23 @@ header {
     padding: 10px;
     font-size: 1.5em;
 }
+nav {
+    margin: 10px;
+}
+nav > button {
+    margin: 10px 20px 10px 10px;
+    font-size: 1.1em;
+    border: none;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.473);
+}
+main {
+    padding: 25px;
+}
 footer {
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     text-align: center;
     color: white;
+    margin-top: 70px;
+    padding: 10px;
 }
