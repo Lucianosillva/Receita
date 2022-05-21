@@ -16,20 +16,8 @@
     --fonte-destaque: 'Dancing Script', cursive;
     --fonte-padrao: Arial, Verdana, Helvetica, Sans-Serif;
 }
-#separacao {
-    background-color: #e94662;
-    height: 100px;
-    width: auto;
-}
 body {
     font-family: var(--fonte-padrao);
-}
-ul, ol {
-    font-size: 1em;
-    font-weight: normal;
-    color: var(--corfontepadrao);
-    line-height: 2em;
-    margin: 0px 0px 0px 110px;
 }
 h2 {
     font-size: 1.6em;
@@ -62,7 +50,40 @@ nav > button {
 }
 main {
     padding: 25px;
+    margin: auto;
 }
+ul, ol {
+    font-size: 1em;
+    font-weight: normal;
+    color: var(--corfontepadrao);
+    line-height: 2em;
+    margin: 0px 0px 0px 110px;
+}
+div#separacao {
+    background-image: linear-gradient(to right, var(--cor1), #ff534044);
+    height: 25px;
+}
+/* Breakpoints */
+/* A partir de 650px ou mais uma parte do conteúdo para tela pequena desaparece */
+@media (min-width: 650px) {
+    nav, #teladocelular {
+        display: none;
+    }
+}
+/* De 650px pra baixo a parte do conteúdo para tela grande desaparece */
+@media (max-width: 650px) {
+    #teladopc {
+        display: none;
+    }
+    /* Quando muda o tamanho de tela para tela pequena pela primeira vez, só mostra a tela de ingredientes, e esconde a tela modo de preparo. */
+    nav, #ingredientescelular {
+        display: block;
+    }
+    #mododepreparocelular {
+        display: none;
+    }
+}
+
 footer {
     background-color: var(--cor2);
     text-align: center;
