@@ -19,7 +19,7 @@
 body {
     font-family: var(--fonte-padrao);
 }
-h2 {
+.ing, .modo {
     font-size: 1.6em;
     font-weight: normal;
     color: var(--corfontepadrao);
@@ -38,12 +38,16 @@ header {
     padding: 10px;
     font-size: 1.5em;
 }
+img {
+    min-width: 250px;
+    width: 100%;
+}
 nav {
     margin: 10px;
 }
 nav > button {
-    margin: 10px 20px 10px 10px;
-    font-size: 1.1em;
+    margin: 10px 0px 10px 10px;
+    font-size: 0.9em;
     border: none;
     background-color: white;
     color: rgba(0, 0, 0, 0.473);
@@ -51,6 +55,8 @@ nav > button {
 main {
     padding: 25px;
     margin: auto;
+    max-width: 1000px;
+    min-width: 250px;
 }
 ul, ol {
     font-size: 1em;
@@ -79,11 +85,21 @@ div#separacao {
     nav, #ingredientescelular {
         display: block;
     }
+    #ing {
+        font-weight: bolder;
+        color: var(--cor1);
+    }
+    /* Ajuste nas margens de telas pequenas */
+    ul, ol {
+        margin-left: 10px;
+    }
+    div > h2 {
+        margin-left: 10px;
+    }
     #mododepreparocelular {
         display: none;
     }
 }
-
 footer {
     background-color: var(--cor2);
     text-align: center;
