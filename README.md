@@ -1,3 +1,4 @@
+![GitHub top language](https://img.shields.io/github/languages/top/Lucianosillva/Receita)
 # Receita
 
 Este site foi construído usando HTML5, CSS3  e JavaScript.
